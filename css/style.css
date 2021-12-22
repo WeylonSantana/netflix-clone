@@ -1,0 +1,115 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --cinza: #aaa;
+  --branco: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--branco);
+}
+
+.logo {
+  color: var(--vermelho);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  gap: 0.65rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cinza);
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+header nav a:hover {
+  color: var(--branco);
+}
+
+/* MAIN */
+.filme-principal {
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%), url('../img/capa-house.jpg') no-repeat center;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.filme-principal .container {
+  margin-left: 4rem;
+}
+
+.filme-principal .titulo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 15%;
+}
+
+.filme-principal .descricao {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  width: 75ch;
+}
+
+.filme-principal .btn-play,
+.filme-principal .btn-info {
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filme-principal .btn-play {
+  margin-right: 0.7rem;
+}
+
+.filme-principal .btn-info {
+  background: var(--cinza);
+  color: var(--branco);
+}
+
+.filme-principal .btn-play:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.filme-principal .btn-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+.box-filmes {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
